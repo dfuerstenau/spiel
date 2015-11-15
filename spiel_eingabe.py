@@ -3,6 +3,7 @@
 import random
 random.seed()
 level = 0
+punkte = 0
 for i in range(1,11):
 	a = random.randint(1,10*(level+1))
 	b = random.randint(1,10*(level+1))
@@ -17,6 +18,13 @@ for i in range(1,11):
 			zahl = int(z)
 			if zahl == c:
 				print("Das ist richtig")
+				if versuch == 1:
+					punkte = punkte + 3
+				if versuch == 2:
+					punkte = punkte + 2
+				if versuch == 3:
+					punkte = punkte + 1
+				print("Du hast jetzt:",punkte,"punkte")
 				fehler = 0
 				level = level + 1
 				print("Du bist Level ", level)
