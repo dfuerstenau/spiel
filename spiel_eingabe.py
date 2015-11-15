@@ -1,3 +1,5 @@
+#Erstes Programm von David Fürstenau
+
 import random
 random.seed()
 level = 0
